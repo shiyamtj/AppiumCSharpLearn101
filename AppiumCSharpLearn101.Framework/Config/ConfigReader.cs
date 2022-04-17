@@ -7,7 +7,7 @@ namespace AppiumCSharpLearn101.Framework.Config
 {
     public class ConfigReader
     {
-        public static void InitializeSettings()
+        public static Settings GetSettings()
         {
             var builder = new ConfigurationBuilder()
                                     .SetBasePath(Directory.GetCurrentDirectory())
@@ -15,12 +15,13 @@ namespace AppiumCSharpLearn101.Framework.Config
 
             IConfigurationRoot configurationRoot = builder.Build();
 
-            var settings = configurationRoot.GetSection("testSettings").Get<TestSettings>();
-
-            Settings.PlatformName = Enum.TryParse(settings.PlatformName, out MobileType mobileType) ? mobileType : throw new Exception("[CRITICAL] Undefined Mobile Type");
-            Settings.AUTPath = settings.AUTPath;
-            Settings.ChromeDriverPath = settings.ChromeDriverPath;
-            Settings.DeviceName = settings.DeviceName;
+            var testSettings = configurationRoot.GetSection("testSettings").Get<TestSettings>();
+            var settings = new Settings();
+            settings.PlatformName = Enum.TryParse(testSettings.PlatformName, out MobileType mobileType) ? mobileType : throw new Exception("[CRITICAL] Undefined Mobile Type");
+            settings.AUTPath = testSettings.AUTPath;
+            settings.ChromeDriverPath = testSettings.ChromeDriverPath;
+            settings.DeviceName = testSettings.DeviceName;
+            return settings;
         }
     }
 }
