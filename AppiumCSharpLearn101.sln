@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppiumCSharpLearn101.Framework", "AppiumCSharpLearn101.Framework\AppiumCSharpLearn101.Framework.csproj", "{323991E8-317C-4F8C-865C-768F09971E6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppiumCSharpLearn101.Test", "AppiumCSharpLearn101.Test\AppiumCSharpLearn101.Test.csproj", "{CCF97555-1E23-4117-88B4-9E9D069277F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppiumCSharpLearn101.Domain", "AppiumCSharpLearn101.Domain\AppiumCSharpLearn101.Domain.csproj", "{5B00BECB-CAD4-4BC7-BADE-FCB8EFD96AB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{323991E8-317C-4F8C-865C-768F09971E6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{323991E8-317C-4F8C-865C-768F09971E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{323991E8-317C-4F8C-865C-768F09971E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{323991E8-317C-4F8C-865C-768F09971E6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCF97555-1E23-4117-88B4-9E9D069277F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCF97555-1E23-4117-88B4-9E9D069277F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCF97555-1E23-4117-88B4-9E9D069277F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCF97555-1E23-4117-88B4-9E9D069277F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B00BECB-CAD4-4BC7-BADE-FCB8EFD96AB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B00BECB-CAD4-4BC7-BADE-FCB8EFD96AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B00BECB-CAD4-4BC7-BADE-FCB8EFD96AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B00BECB-CAD4-4BC7-BADE-FCB8EFD96AB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

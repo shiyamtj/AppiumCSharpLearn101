@@ -1,11 +1,11 @@
-using AppiumCSharp101.Framework.Core;
-using AppiumCSharp101.Framework.Extensions;
+﻿using AppiumCSharpLearn101.Framework.Core;
+using AppiumCSharpLearn101.Framework.Extensions;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Appium;
 
-namespace AppiumCSharp101.Domain.Screen
+namespace AppiumCSharpLearn101.Domain.Screen
 {
-    public class LoginScreen: BaseScreen
+    public class LoginScreen : BaseScreen
     {
         By usernameLocator => MobileBy.AccessibilityId("test-Username");
         By passwordLocator => MobileBy.AccessibilityId("test-Password");

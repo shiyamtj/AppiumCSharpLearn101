@@ -1,6 +1,6 @@
-using AppiumCSharp101.Framework.Core;
+﻿using AppiumCSharpLearn101.Framework.Core;
 
-namespace AppiumCSharp101.Framework.Config
+namespace AppiumCSharpLearn101.Framework.Config
 {
     public class Settings
     {

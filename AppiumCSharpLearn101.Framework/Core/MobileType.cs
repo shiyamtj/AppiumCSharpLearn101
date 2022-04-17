@@ -1,4 +1,4 @@
-namespace AppiumCSharp101.Framework.Core
+﻿namespace AppiumCSharpLearn101.Framework.Core
 {
     public enum MobileType
     {

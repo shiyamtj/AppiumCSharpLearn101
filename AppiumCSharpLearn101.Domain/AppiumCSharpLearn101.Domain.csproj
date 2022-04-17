@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AppiumCSharpLearn101.Framework\AppiumCSharpLearn101.Framework.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Screens\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Screen\" />
+  </ItemGroup>
+</Project>

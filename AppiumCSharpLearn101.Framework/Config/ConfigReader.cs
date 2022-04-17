@@ -1,9 +1,9 @@
-using System;
+﻿using System;
 using System.IO;
-using AppiumCSharp101.Framework.Core;
+using AppiumCSharpLearn101.Framework.Core;
 using Microsoft.Extensions.Configuration;
 
-namespace AppiumCSharp101.Framework.Config
+namespace AppiumCSharpLearn101.Framework.Config
 {
     public class ConfigReader
     {

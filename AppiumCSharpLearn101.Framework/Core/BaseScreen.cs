@@ -1,6 +1,7 @@
+﻿using AppiumCSharpLearn101.Framework.Core;
 using OpenQA.Selenium.Appium;
 
-namespace AppiumCSharp101.Framework.Core
+namespace AppiumCSharpLearn101.Framework.Core
 {
     public class BaseScreen
     {

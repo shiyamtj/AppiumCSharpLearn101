@@ -1,8 +1,8 @@
-using AppiumCSharp101.Domain;
-using AppiumCSharp101.Framework.Core;
+using AppiumCSharpLearn101.Domain;
+using AppiumCSharpLearn101.Framework.Core;
 using NUnit.Framework;
 
-namespace AppiumCSharp101.Test
+namespace AppiumCSharpLearn101.Test
 {
     [TestFixture(MobileType.ANDROID)]
     [TestFixture(MobileType.IOS)]

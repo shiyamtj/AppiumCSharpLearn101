@@ -1,6 +1,7 @@
-using System;
+﻿using System;
 using System.IO;
 using System.Linq;
+using AppiumCSharpLearn101.Framework.Core;
 using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Android;
 using OpenQA.Selenium.Appium.Enums;
@@ -8,13 +9,13 @@ using OpenQA.Selenium.Appium.Interfaces;
 using OpenQA.Selenium.Appium.iOS;
 using OpenQA.Selenium.Appium.Service;
 
-namespace AppiumCSharp101.Framework.Core
+namespace AppiumCSharpLearn101.Framework.Core
 {
     public class DriverFactory
     {
-        private AppiumLocalService _appiumLocalService; 
-        private static Lazy<DriverFactory> _instance = new Lazy<DriverFactory>(()=> new DriverFactory());
-        private DriverFactory() {}
+        private AppiumLocalService _appiumLocalService;
+        private static Lazy<DriverFactory> _instance = new Lazy<DriverFactory>(() => new DriverFactory());
+        private DriverFactory() { }
 
         public static DriverFactory Instance => _instance.Value;
         public AppiumDriver<AppiumWebElement> AppiumDriver { get; set; }
@@ -27,7 +28,7 @@ namespace AppiumCSharp101.Framework.Core
             MobileType = mobileType;
             var appiumOptions = new AppiumOptions();
 
-            if(MobileType == MobileType.ANDROID)
+            if (MobileType == MobileType.ANDROID)
             {
                 string testAppPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "Android.SauceLabs.Mobile.Sample.app.2.7.1.apk");
                 appiumOptions.AddAdditionalCapability(MobileCapabilityType.AutomationName, "UiAutomator2");
@@ -70,14 +71,14 @@ namespace AppiumCSharp101.Framework.Core
             var nativeContext = contexts.ToList().Find(a => a.Contains("NATIVE"));
             ((IContextAware)AppiumDriver).Context = nativeContext;
         }
-        
+
         public AppiumLocalService StartAppiumLocalService()
         {
             _appiumLocalService = new AppiumServiceBuilder()
                                                 .UsingAnyFreePort()
                                                 .WithAppiumJS(new FileInfo("/usr/local/lib/node_modules/appium/build/lib/main.js"))
                                                 .Build();
-            if(!_appiumLocalService.IsRunning)
+            if (!_appiumLocalService.IsRunning)
                 _appiumLocalService.Start();
 
             return _appiumLocalService;
@@ -89,7 +90,7 @@ namespace AppiumCSharp101.Framework.Core
                                             .UsingPort(port)
                                             .WithAppiumJS(new FileInfo("/usr/local/lib/node_modules/appium/build/lib/main.js"))
                                             .Build();
-            if(!_appiumLocalService.IsRunning)
+            if (!_appiumLocalService.IsRunning)
                 _appiumLocalService.Start();
 
             return _appiumLocalService;

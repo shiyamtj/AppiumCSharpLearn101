@@ -1,6 +1,6 @@
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
-namespace AppiumCSharp101.Framework.Config
+namespace AppiumCSharpLearn101.Framework.Config
 {
     public class TestSettings
     {
@@ -8,15 +8,15 @@ namespace AppiumCSharp101.Framework.Config
         public string Name { get; set; }
 
         [JsonProperty("autPath")]
-        public string AUTPath { get; set; } 
+        public string AUTPath { get; set; }
 
         [JsonProperty("deviceName")]
-        public string DeviceName { get; set; }  
+        public string DeviceName { get; set; }
 
         [JsonProperty("platformName")]
-        public string PlatformName { get; set; }  
+        public string PlatformName { get; set; }
 
-        [JsonProperty("chromeDriverPath")]  
+        [JsonProperty("chromeDriverPath")]
         public string ChromeDriverPath { get; set; }
     }
 }

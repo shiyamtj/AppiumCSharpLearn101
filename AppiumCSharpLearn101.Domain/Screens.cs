@@ -1,7 +1,7 @@
-using System;
-using AppiumCSharp101.Domain.Screen;
+﻿using System;
+using AppiumCSharpLearn101.Domain.Screen;
 
-namespace AppiumCSharp101.Domain
+namespace AppiumCSharpLearn101.Domain
 {
     public class Screens
     {
