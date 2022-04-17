@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppiumCSharpLearn101.Framew
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppiumCSharpLearn101.Test", "AppiumCSharpLearn101.Test\AppiumCSharpLearn101.Test.csproj", "{CCF97555-1E23-4117-88B4-9E9D069277F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppiumCSharpLearn101.Domain", "AppiumCSharpLearn101.Domain\AppiumCSharpLearn101.Domain.csproj", "{5B00BECB-CAD4-4BC7-BADE-FCB8EFD96AB5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppiumCSharpLearn101.Domain", "AppiumCSharpLearn101.Domain\AppiumCSharpLearn101.Domain.csproj", "{5D362072-581F-4A32-981A-8A776B452AD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,9 +26,9 @@ Global
 		{CCF97555-1E23-4117-88B4-9E9D069277F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCF97555-1E23-4117-88B4-9E9D069277F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCF97555-1E23-4117-88B4-9E9D069277F4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5B00BECB-CAD4-4BC7-BADE-FCB8EFD96AB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5B00BECB-CAD4-4BC7-BADE-FCB8EFD96AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5B00BECB-CAD4-4BC7-BADE-FCB8EFD96AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5B00BECB-CAD4-4BC7-BADE-FCB8EFD96AB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D362072-581F-4A32-981A-8A776B452AD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D362072-581F-4A32-981A-8A776B452AD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D362072-581F-4A32-981A-8A776B452AD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D362072-581F-4A32-981A-8A776B452AD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

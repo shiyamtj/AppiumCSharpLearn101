@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Linq;
 using System.Threading;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Appium;
+using OpenQA.Selenium.Appium.Interfaces;
 using OpenQA.Selenium.Support.UI;
 
 namespace AppiumCSharpLearn101.Framework.Extensions
@@ -21,6 +23,20 @@ namespace AppiumCSharpLearn101.Framework.Extensions
         {
             try { Thread.Sleep(TimeSpan.FromSeconds(seconds)); }
             catch { }
+        }
+
+        public static void SwitchToWebview(this AppiumDriver<AppiumWebElement> driver)
+        {
+            var contexts = ((IContextAware)driver).Contexts;
+            var nativeContext = contexts.ToList().Find(a => a.Contains("WEBVIEW"));
+            ((IContextAware)driver).Context = nativeContext;
+        }
+
+        public static void SwitchToNative(this AppiumDriver<AppiumWebElement> driver)
+        {
+            var contexts = ((IContextAware)driver).Contexts;
+            var nativeContext = contexts.ToList().Find(a => a.Contains("NATIVE"));
+            ((IContextAware)driver).Context = nativeContext;
         }
     }
 }
